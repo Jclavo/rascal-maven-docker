@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  maven:
+    container_name: mymaven
+    image: maven
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    # environment:
+    #   JAVA_OPTS: -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005,quiet=y
+    ports:
+      - 3010:3000
+      - 5015:5005
