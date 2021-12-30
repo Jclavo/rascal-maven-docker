@@ -1,0 +1,3 @@
+[submodule "app/jimpleFramework"]
+	path = app/jimpleFramework
+	url = https://github.com/PAMunb/JimpleFramework
