@@ -1,30 +1,29 @@
-It is a template of Maven running in a docker container 
+It is container for the Jimple Framework
+ 
+source : https://github.com/PAMunb/JimpleFramework
 
-# Maven commands
+# How to install:
 
-Create a project
+- clone the repository
+- docker-compose build
+- docker-compose up -d
+- docker exec -it my-jimple-framework /bin/bash (it will open a container terminal)
+- cd /usr/app/jimpleFramework
+- mvn clean install
 
-- mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+# Run a test
 
-| DgroupId = [package-name] 
-| DartifactId = [project-name] 
+java -Xmx1G -Xss32m -jar [path-rasca.jar]
+java -Xmx1G -Xss32m -jar  /home/maven/.m2/repository/org/rascalmpl/rascal/0.19.2/rascal-0.19.2.jar
+(a console will be opened)
+> import module;
+> test-name();
 
-Build project (it will create .jar)
+# Run an independet file
 
-- mvn package
+java -Xmx1G -Xss32m -jar [path-rasca.jar] [path-file.rsc]
 
-- mvn -f [pom-project-path] clean package
-- mvn -f /usr/app/my-app/pom.xml clean package
+java -Xmx1G -Xss32m -jar  /home/maven/.m2/repository/org/rascalmpl/rascal/0.19.2/rascal-0.19.2.jar lang/jimple/tests/TestReachDefinition.rsc
 
-Run .jar
 
-- java -cp target/[jar-name] [package-name].[class-name] 
-- java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App 
-
-Install packages
-
-- mvn clean install (in a project already created)
-
-# Useful links
-
-- https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+Happy coding!!
