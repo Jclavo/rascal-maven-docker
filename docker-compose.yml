@@ -1,12 +1,13 @@
 version: '3.4'
 
 services:
-  maven:
-    container_name: mymaven
-    image: maven
+  jimple-framework:
+    container_name: my-jimple-framework
+    image: jimple-framework
     build:
       context: .
       dockerfile: ./Dockerfile
+    working_dir: /usr/app/jimpleFramework 
     volumes:
         - ./app:/usr/app
     ports:
