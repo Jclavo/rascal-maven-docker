@@ -29,5 +29,8 @@ It is container for any Rascal-Maven project
 
 - java -Xmx1G -Xss32m -jar  /home/maven/.m2/repository/org/rascalmpl/rascal/0.18.0/rascal-0.18.0.jarjimple/tests/TestReachDefinition.rsc
 
+# Rascal shell
+
+Ctrl + d will end the execution of the shell
 
 Happy coding!!
