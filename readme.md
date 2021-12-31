@@ -23,7 +23,7 @@ It is container for any Rascal-Maven project
 - import module;
 - test-name();
 
-# Run an independet file
+# Run an independent file
 
 > java -Xmx1G -Xss32m -jar [path-rasca.jar] [path-file.rsc]
 
