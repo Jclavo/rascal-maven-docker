@@ -7,7 +7,7 @@ It is container for any Rascal-Maven project
 - docker-compose build
 - docker-compose up -d
 - docker exec -it [CONTAINER_NAME] /bin/bash (it will open a container terminal)
-- mvn clean install (only the first time)
+- mvn clean install (only the first time - check with rascal's version is installed at /home/maven/.m2/repository/org/rascalmpl/rascal/)
 
 # Set Project as submodule
 - cd rascal-maven-docker/app
@@ -17,7 +17,7 @@ It is container for any Rascal-Maven project
 
 > java -Xmx1G -Xss32m -jar [path-rasca.jar]
 
-- java -Xmx1G -Xss32m -jar  /home/maven/.m2/repository/org/rascalmpl/rascal/0.19.2/rascal-0.19.2.jar
+- java -Xmx1G -Xss32m -jar  /home/maven/.m2/repository/org/rascalmpl/rascal/0.18.0/rascal-0.18.0.jar
 (a console will be opened)
 
 - import module;
@@ -27,7 +27,7 @@ It is container for any Rascal-Maven project
 
 > java -Xmx1G -Xss32m -jar [path-rasca.jar] [path-file.rsc]
 
-- java -Xmx1G -Xss32m -jar  /home/maven/.m2/repository/org/rascalmpl/rascal/0.19.2/rascal-0.19.2.jar lang/jimple/tests/TestReachDefinition.rsc
+- java -Xmx1G -Xss32m -jar  /home/maven/.m2/repository/org/rascalmpl/rascal/0.18.0/rascal-0.18.0.jarjimple/tests/TestReachDefinition.rsc
 
 
 Happy coding!!
