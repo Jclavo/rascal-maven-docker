@@ -13,9 +13,6 @@ It is container for any Rascal-Maven project
 - cd rascal-maven-docker/app
 - git submodule add <git-url> <alias>:optional
 
-git submodule add https://jclavotafur@github.com/giapsunb/reverseEngineeringETL.git reverseEngineeringETL
-git submodule add https://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@github.com/giapsunb/reverseEngineeringETL.git reverseEngineeringETL
-
 # Run a test
 
 > java -Xmx1G -Xss32m -jar [path-rasca.jar]
